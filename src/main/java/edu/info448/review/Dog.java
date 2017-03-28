@@ -25,7 +25,7 @@ public class Dog extends Animal
 	}
 
 	public void bark() {
-		System.out.println(this+" says: Bark!");
+		System.out.println(this+" says: Bark! Bark!");
 	}
 
 	public void wagTail(int times){
@@ -44,6 +44,10 @@ public class Dog extends Animal
 			dogs[i] = new Dog("Puppy-"+(i+1), "Dalmation");
 		}
 		return dogs;
+	}
+
+	public void speak() {
+		System.out.println("scooby doob doo");
 	}
 
 }
