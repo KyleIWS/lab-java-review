@@ -15,5 +15,7 @@ public class Tester {
 		System.out.println(Arrays.toString(pups));
 		Husky kyle = new Husky("Kdawg");
 		kyle.bark();
+		kyle.speak(); // Should be the same as above, but implemented abstract
+		GiftBox<Husky> present = new GiftBox<Husky>(kyle);
 	}
 }

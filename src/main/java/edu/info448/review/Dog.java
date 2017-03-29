@@ -47,7 +47,28 @@ public class Dog extends Animal
 	}
 
 	public void speak() {
-		System.out.println("scooby doob doo");
+		this.bark();
+	}
+
+	public static interface Sniffable {
+		public void smellsLike();
+	}
+
+	public static class Smell implements Dog.Sniffable{
+		
+		public String smell;
+		
+		public Smell(String smell) {
+			this.smell = smell;
+		}
+	
+		public void smellsLike() {
+			System.out.println("Smells like " + this.smell);
+		}
+	}
+
+	public void giveSmell(Smell s) {
+		s.smellsLike();
 	}
 
 }
